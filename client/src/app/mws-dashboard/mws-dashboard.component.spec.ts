@@ -1,19 +1,19 @@
 
 import { fakeAsync, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AppNavbarComponent } from './app-navbar.component';
+import { MwsDashboardComponent } from './mws-dashboard.component';
 
-describe('AppNavbarComponent', () => {
-  let component: AppNavbarComponent;
-  let fixture: ComponentFixture<AppNavbarComponent>;
+describe('MwsDashboardComponent', () => {
+  let component: MwsDashboardComponent;
+  let fixture: ComponentFixture<MwsDashboardComponent>;
 
   beforeEach(fakeAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ AppNavbarComponent ]
+      declarations: [ MwsDashboardComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(AppNavbarComponent);
+    fixture = TestBed.createComponent(MwsDashboardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

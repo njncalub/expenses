@@ -4,11 +4,11 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@angular/cdk/layout';
-import { AppMaterialModule } from './app-material/app-material.module';
+import { MwsMaterialModule } from './mws-material/mws-material.module';
 
-import { AppComponent } from './app.component';
-import { AppNavbarComponent } from './app-navbar/app-navbar.component';
-import { AppDashboardComponent } from './app-dashboard/app-dashboard.component';
+import { MwsAppComponent } from './app.component';
+import { MwsNavbarComponent } from './mws-navbar/mws-navbar.component';
+import { MwsDashboardComponent } from './mws-dashboard/mws-dashboard.component';
 
 @NgModule({
   imports: [
@@ -16,15 +16,15 @@ import { AppDashboardComponent } from './app-dashboard/app-dashboard.component';
     BrowserAnimationsModule,
     LayoutModule,
     FormsModule,
-    AppMaterialModule,
+    MwsMaterialModule,
   ],
   declarations: [
-    AppComponent,
-    AppNavbarComponent,
-    AppDashboardComponent,
+    MwsAppComponent,
+    MwsNavbarComponent,
+    MwsDashboardComponent,
   ],
   bootstrap: [
-    AppComponent,
+    MwsAppComponent,
   ],
   providers: [],
 })

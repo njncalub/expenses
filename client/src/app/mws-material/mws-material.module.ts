@@ -99,4 +99,4 @@ import {
     MatPaginatorModule,
   ]
 })
-export class AppMaterialModule { }
+export class MwsMaterialModule { }
