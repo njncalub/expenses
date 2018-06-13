@@ -1,0 +1,29 @@
+<div class="navbar-container" [class.navbar-is-mobile]="mobileQuery.matches">
+  <mat-toolbar color="primary" class="navbar-toolbar">
+    <button mat-icon-button
+      type="button"
+      aria-label="Toggle sidenav"
+      (click)="drawer.toggle()">
+      <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+    </button>
+    <h1 class="navbar-app-name">{{ title }}</h1>
+  </mat-toolbar>
+
+  <mat-sidenav-container class="navbar-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+    <mat-sidenav #drawer
+                class="sidenav"
+                [mode]="mobileQuery.matches ? 'over' : 'side'"
+                [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+      <mat-nav-list>
+        <a mat-list-item routerLink=".">Wallet 1</a>
+        <a mat-list-item routerLink=".">Wallet 2</a>
+        <a mat-list-item routerLink=".">Wallet 3</a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <p>Sample Content 1</p>
+      <p>Sample Content 2</p>
+      <p>Sample Content 3</p>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
