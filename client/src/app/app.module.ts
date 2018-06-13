@@ -7,6 +7,7 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MwsMaterialModule } from './mws-material/mws-material.module';
 
 import { MwsAppComponent } from './app.component';
+import { MwsAvatarComponent } from './mws-avatar/mws-avatar.component';
 import { MwsNavbarComponent } from './mws-navbar/mws-navbar.component';
 import { MwsDashboardComponent } from './mws-dashboard/mws-dashboard.component';
 
@@ -22,6 +23,7 @@ import { MwsDashboardComponent } from './mws-dashboard/mws-dashboard.component';
     MwsAppComponent,
     MwsNavbarComponent,
     MwsDashboardComponent,
+    MwsAvatarComponent,
   ],
   bootstrap: [
     MwsAppComponent,

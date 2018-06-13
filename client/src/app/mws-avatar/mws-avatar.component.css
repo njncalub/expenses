@@ -1,0 +1,12 @@
+.avatar-icon{
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  display: inline-block;
+  background-repeat: no-repeat no-repeat;
+  pointer-events: none;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+}
