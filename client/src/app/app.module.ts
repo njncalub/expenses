@@ -8,6 +8,7 @@ import { AppMaterialModule } from './app-material/app-material.module';
 
 import { AppComponent } from './app.component';
 import { AppNavbarComponent } from './app-navbar/app-navbar.component';
+import { AppDashboardComponent } from './app-dashboard/app-dashboard.component';
 
 @NgModule({
   imports: [
@@ -20,6 +21,7 @@ import { AppNavbarComponent } from './app-navbar/app-navbar.component';
   declarations: [
     AppComponent,
     AppNavbarComponent,
+    AppDashboardComponent,
   ],
   bootstrap: [
     AppComponent,
