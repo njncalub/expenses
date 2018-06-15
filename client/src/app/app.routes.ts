@@ -1,16 +1,9 @@
-import { Routes } from '@angular/router';
+import { ModuleWithProviders } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 
 import { MwsHomeComponent } from './mws-home/mws-home.component';
 
-export const appRoutes: Routes = [
-  // {
-  //   path: 'crisis-center',
-  //   component: CrisisListComponent,
-  // },
-  // {
-  //   path: 'hero/:id',
-  //   component: HeroDetailComponent,
-  // },
+const appRoutes: Routes = [
   {
     path: 'home',
     component: MwsHomeComponent,
@@ -30,3 +23,9 @@ export const appRoutes: Routes = [
   },
 ];
 
+export const AppRoutesModule: ModuleWithProviders = RouterModule.forRoot(
+  appRoutes,
+  {
+    // enableTracing: true,
+  }
+);

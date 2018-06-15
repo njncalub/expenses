@@ -1,7 +1,7 @@
 import 'hammerjs';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { AppRoutesModule } from './app.routes';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@angular/cdk/layout';
@@ -13,10 +13,11 @@ import { MwsMaterialModule } from './mws-material/mws-material.module';
 import { MwsAppComponent } from './app.component';
 import { MwsAccountMenuComponent } from './mws-account-menu/mws-account-menu.component';
 import { MwsNavbarComponent } from './mws-navbar/mws-navbar.component';
+import { MwsSidebarComponent } from './mws-sidebar/mws-sidebar.component';
 import { MwsSearchbarComponent } from './mws-searchbar/mws-searchbar.component';
 import { MwsHomeComponent } from './mws-home/mws-home.component';
 
-import { appRoutes } from './app.routes';
+import { MwsSidebarService } from './mws-sidebar/mws-sidebar.service';
 
 @NgModule({
   imports: [
@@ -27,21 +28,21 @@ import { appRoutes } from './app.routes';
     ReactiveFormsModule,
     MwsMaterialModule,
     FlexLayoutModule,
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true }
-    ),
+    AppRoutesModule,
   ],
   declarations: [
     MwsAppComponent,
     MwsNavbarComponent,
     MwsHomeComponent,
+    MwsSidebarComponent,
     MwsSearchbarComponent,
     MwsAccountMenuComponent,
   ],
   bootstrap: [
     MwsAppComponent,
   ],
-  providers: [],
+  providers: [
+    MwsSidebarService,
+  ],
 })
 export class AppModule {}
