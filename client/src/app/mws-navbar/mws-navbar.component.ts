@@ -4,14 +4,14 @@ import { ChangeDetectorRef, Component, OnDestroy } from '@angular/core';
 @Component({
   selector: 'mws-navbar',
   templateUrl: './mws-navbar.component.html',
-  styleUrls: ['./mws-navbar.component.css']
+  styleUrls: ['./mws-navbar.component.css'],
 })
 export class MwsNavbarComponent implements OnDestroy {
   mobileQuery: MediaQueryList;
 
   private _mobileQueryListener: () => void;
 
-  title = 'Expenses';
+  readonly title = 'My Expenses';
 
   constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
     this.mobileQuery = media.matchMedia('(max-width: 600px)');

@@ -7,7 +7,9 @@
       <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
     </button>
     <h1 class="navbar-app-name">{{ title }}</h1>
-    <span class="fill-remaining-space"></span>
+    <span class="spacer"></span>
+    <mws-searchbar></mws-searchbar>
+    <span class="spacer"></span>
     <mws-account-menu></mws-account-menu>
   </mat-toolbar>
 
@@ -23,7 +25,6 @@
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
-      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
       <mws-dashboard></mws-dashboard>
     </mat-sidenav-content>
   </mat-sidenav-container>
