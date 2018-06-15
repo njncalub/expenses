@@ -8,7 +8,7 @@
     </button>
     <h1 class="navbar-app-name">{{ title }}</h1>
     <span class="fill-remaining-space"></span>
-    <mws-avatar></mws-avatar>
+    <mws-account-menu></mws-account-menu>
   </mat-toolbar>
 
   <mat-sidenav-container class="navbar-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
@@ -23,6 +23,7 @@
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
       <mws-dashboard></mws-dashboard>
     </mat-sidenav-content>
   </mat-sidenav-container>

@@ -4,10 +4,12 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@angular/cdk/layout';
+// This is currently a lazy implementation, don't use it for production.
+// You should always import material modules separately.
 import { MwsMaterialModule } from './mws-material/mws-material.module';
 
 import { MwsAppComponent } from './app.component';
-import { MwsAvatarComponent } from './mws-avatar/mws-avatar.component';
+import { MwsAccountMenuComponent } from './mws-account-menu/mws-account-menu.component';
 import { MwsNavbarComponent } from './mws-navbar/mws-navbar.component';
 import { MwsDashboardComponent } from './mws-dashboard/mws-dashboard.component';
 
@@ -23,7 +25,7 @@ import { MwsDashboardComponent } from './mws-dashboard/mws-dashboard.component';
     MwsAppComponent,
     MwsNavbarComponent,
     MwsDashboardComponent,
-    MwsAvatarComponent,
+    MwsAccountMenuComponent,
   ],
   bootstrap: [
     MwsAppComponent,
