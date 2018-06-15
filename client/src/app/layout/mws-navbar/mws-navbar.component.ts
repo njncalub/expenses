@@ -1,7 +1,7 @@
 import { MediaMatcher } from '@angular/cdk/layout';
 import { ChangeDetectorRef, Component, OnDestroy } from '@angular/core';
 
-import { MwsSidebarService } from '../mws-sidebar/mws-sidebar.service';
+import { MwsSidebarService } from '../../services/mws-sidebar.service';
 
 @Component({
   selector: 'mws-navbar',

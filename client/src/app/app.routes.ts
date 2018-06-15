@@ -1,7 +1,7 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { MwsHomeComponent } from './mws-home/mws-home.component';
+import { MwsHomeComponent } from './pages/mws-home/mws-home.component';
 
 const appRoutes: Routes = [
   {
