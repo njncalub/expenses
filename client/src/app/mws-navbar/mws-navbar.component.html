@@ -6,7 +6,8 @@
       (click)="drawer.toggle()">
       <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
     </button>
-    <h1 class="navbar-app-name">{{ title }}</h1>
+    <a class="navbar-app-name"
+       routerLink="home">{{ title }}</a>
     <span class="spacer"></span>
     <mws-searchbar></mws-searchbar>
     <span class="spacer"></span>
@@ -26,7 +27,7 @@
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
-      <mws-dashboard></mws-dashboard>
+      <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>

@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'mws-dashboard',
-  templateUrl: './mws-dashboard.component.html',
-  styleUrls: ['./mws-dashboard.component.css']
+  selector: 'mws-home',
+  templateUrl: './mws-home.component.html',
+  styleUrls: ['./mws-home.component.css']
 })
-export class MwsDashboardComponent {
+export class MwsHomeComponent {
   cards = [
     { title: 'Card 1', cols: 2, rows: 1 },
     { title: 'Card 2', cols: 1, rows: 1 },

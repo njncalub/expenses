@@ -1,19 +1,19 @@
 
 import { fakeAsync, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MwsDashboardComponent } from './mws-dashboard.component';
+import { MwsHomeComponent } from './mws-home.component';
 
-describe('MwsDashboardComponent', () => {
-  let component: MwsDashboardComponent;
-  let fixture: ComponentFixture<MwsDashboardComponent>;
+describe('MwsHomeComponent', () => {
+  let component: MwsHomeComponent;
+  let fixture: ComponentFixture<MwsHomeComponent>;
 
   beforeEach(fakeAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ MwsDashboardComponent ]
+      declarations: [ MwsHomeComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MwsDashboardComponent);
+    fixture = TestBed.createComponent(MwsHomeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

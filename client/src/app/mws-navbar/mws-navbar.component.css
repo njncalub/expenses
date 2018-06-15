@@ -13,8 +13,10 @@
   z-index: 2;
 }
 
-h1.navbar-app-name {
+.navbar-app-name {
   margin-left: 8px;
+  text-decoration: none;
+  color: white;
 }
 
 .navbar-sidenav-container {
