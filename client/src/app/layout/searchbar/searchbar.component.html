@@ -1,5 +1,5 @@
 <form class="search-form"
-      [formGroup]="stateForm"
+      [formGroup]="searchForm"
       fxFlex fxShow=”true”
       fxHide.lt-md=”true”>
   <mat-form-field class="search-form-field" appearance="fill">
@@ -7,16 +7,17 @@
     <input class="search-form-field-input"
            matInput
            type="text"
-           formControlName="stateGroup"
+           formControlName="searchGroup"
            [matAutocomplete]="autoGroup"/>
     <div matPrefix class="icon-wrapper">
       <mat-icon>search</mat-icon>
     </div>
     <mat-autocomplete #autoGroup="matAutocomplete">
-      <mat-optgroup *ngFor="let group of stateGroupOptions | async"
+      <mat-optgroup *ngFor="let group of searchGroupOptions | async"
                     [label]="group.letter">
         <mat-option *ngFor="let name of group.names"
-                    [value]="name">
+                    [value]="name"
+                    routerLink="wallets/{{name}}">
           {{ name }}
         </mat-option>
       </mat-optgroup>

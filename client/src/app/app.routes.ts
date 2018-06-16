@@ -12,6 +12,13 @@ const appRoutes: Routes = [
     },
   },
   {
+    path: 'wallets/:id',
+    component: MwsHomeComponent,
+    data: {
+      title: 'Home',
+    },
+  },
+  {
     path: '',
     redirectTo: '/home',
     pathMatch: 'full',

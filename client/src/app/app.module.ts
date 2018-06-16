@@ -20,6 +20,7 @@ import { MwsSearchbarComponent } from './layout/searchbar/searchbar.component';
 import { MwsHomeComponent } from './pages/home/home.component';
 
 import { MwsSidebarService } from './services/sidebar.service';
+import { MwsStatesService } from './services/states.service';
 
 @NgModule({
   imports: [
@@ -45,6 +46,7 @@ import { MwsSidebarService } from './services/sidebar.service';
   ],
   providers: [
     MwsSidebarService,
+    MwsStatesService,
   ],
 })
 export class AppModule {}
