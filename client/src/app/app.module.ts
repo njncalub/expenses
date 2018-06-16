@@ -15,6 +15,7 @@ import { MwsAppComponent } from './app.component';
 import { MwsMenuComponent } from './layout/menu/menu.component';
 import { MwsNavbarComponent } from './layout/navbar/navbar.component';
 import { MwsSidebarComponent } from './layout/sidebar/sidebar.component';
+import { MwsFooterComponent } from './layout/footer/footer.component';
 import { MwsSearchbarComponent } from './layout/searchbar/searchbar.component';
 
 import { MwsHomeComponent } from './pages/home/home.component';
@@ -40,6 +41,7 @@ import { MwsStatesService } from './services/states.service';
     MwsSidebarComponent,
     MwsSearchbarComponent,
     MwsMenuComponent,
+    MwsFooterComponent,
   ],
   bootstrap: [
     MwsAppComponent,
