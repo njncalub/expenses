@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'mws-home',
-  templateUrl: './mws-home.component.html',
-  styleUrls: ['./mws-home.component.css']
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
 export class MwsHomeComponent {
   cards = [

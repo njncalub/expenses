@@ -13,8 +13,8 @@ export interface StateGroup {
  */
 @Component({
   selector: 'mws-searchbar',
-  templateUrl: './mws-searchbar.component.html',
-  styleUrls: ['./mws-searchbar.component.css']
+  templateUrl: './searchbar.component.html',
+  styleUrls: ['./searchbar.component.css']
 })
 export class MwsSearchbarComponent implements OnInit {
   stateForm: FormGroup = this.fb.group({

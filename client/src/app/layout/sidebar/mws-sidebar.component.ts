@@ -1,15 +1,15 @@
 import { MediaMatcher } from '@angular/cdk/layout';
-import { ChangeDetectorRef, Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { ChangeDetectorRef, Component, OnDestroy, AfterContentInit, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material';
 
-import { MwsSidebarService } from '../../services/mws-sidebar.service';
+import { MwsSidebarService } from '../../services/sidebar.service';
 
 @Component({
   selector: 'mws-sidebar',
-  templateUrl: './mws-sidebar.component.html',
-  styleUrls: ['./mws-sidebar.component.css'],
+  templateUrl: './sidebar.component.html',
+  styleUrls: ['./sidebar.component.css'],
 })
-export class MwsSidebarComponent implements OnInit, OnDestroy {
+export class MwsSidebarComponent implements AfterContentInit, OnDestroy {
   @ViewChild('nav') sidenav: MatSidenav;
 
   mobileQuery: MediaQueryList;
@@ -24,7 +24,7 @@ export class MwsSidebarComponent implements OnInit, OnDestroy {
     this.mobileQuery.addListener(this._mobileQueryListener);
   }
 
-  ngOnInit(): void {
+  ngAfterContentInit(): void {
     this.sidebarService.setSidenav(this.sidenav);
   }
 

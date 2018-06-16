@@ -9,17 +9,17 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { FlexLayoutModule } from '@angular/flex-layout';
 // This is currently a lazy implementation, don't use it for production.
 // You should always import material modules separately.
-import { MwsMaterialModule } from './shared/mws-material.module';
+import { MwsMaterialModule } from './shared/material.module';
 
 import { MwsAppComponent } from './app.component';
-import { MwsAccountMenuComponent } from './layout/mws-account-menu/mws-account-menu.component';
-import { MwsNavbarComponent } from './layout/mws-navbar/mws-navbar.component';
-import { MwsSidebarComponent } from './layout/mws-sidebar/mws-sidebar.component';
-import { MwsSearchbarComponent } from './layout/mws-searchbar/mws-searchbar.component';
+import { MwsMenuComponent } from './layout/menu/menu.component';
+import { MwsNavbarComponent } from './layout/navbar/navbar.component';
+import { MwsSidebarComponent } from './layout/sidebar/sidebar.component';
+import { MwsSearchbarComponent } from './layout/searchbar/searchbar.component';
 
-import { MwsHomeComponent } from './pages/mws-home/mws-home.component';
+import { MwsHomeComponent } from './pages/home/home.component';
 
-import { MwsSidebarService } from './services/mws-sidebar.service';
+import { MwsSidebarService } from './services/sidebar.service';
 
 @NgModule({
   imports: [
@@ -38,7 +38,7 @@ import { MwsSidebarService } from './services/mws-sidebar.service';
     MwsHomeComponent,
     MwsSidebarComponent,
     MwsSearchbarComponent,
-    MwsAccountMenuComponent,
+    MwsMenuComponent,
   ],
   bootstrap: [
     MwsAppComponent,

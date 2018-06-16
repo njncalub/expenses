@@ -1,7 +1,7 @@
 
 import { fakeAsync, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MwsNavbarComponent } from './mws-navbar.component';
+import { MwsNavbarComponent } from './navbar.component';
 
 describe('MwsNavbarComponent', () => {
   let component: MwsNavbarComponent;
